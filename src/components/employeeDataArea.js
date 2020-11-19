@@ -64,4 +64,16 @@ const DataArea = () => {
               }
             }
           };
+          const sortedUsers = developerState.filteredUsers.sort(compareFnc);
+          const updatedHeadings = developerState.headings.map(elem => {
+            elem.order = elem.name === heading ? currentOrder : elem.order;
+            return elem;
+          });
       
+          setDeveloperState({
+            ...developerState,
+            filteredUsers: sortedUsers,
+            headings: updatedHeadings
+          });
+        };
+        
