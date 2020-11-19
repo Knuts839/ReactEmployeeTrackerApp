@@ -2,7 +2,7 @@
 import React from "react";
 import SearchName from "./employeeSearchName.js";
 import SearchDOB from "./employeeSearchDOB.js";
-import "../styles/Nav.css";
+// import "../styles/Nav.css";
 
 function Nav() {
   return (

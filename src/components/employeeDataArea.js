@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import DataTable from "./dataTable";
 import Nav from "./Nav";
 import API from "../utils/API";
-import "../styles/DataArea.css";
+// import "../styles/DataArea.css";
 import myDataSpot from "../utils/myDataSpot";
 
 const DataArea = () => {

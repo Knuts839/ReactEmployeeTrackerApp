@@ -1,8 +1,8 @@
 import React, { useContext } from "react";
-import "../styles/SearchName.css";
-import DataAreaContext from "../utils/DataAreaContext";
+// import "../styles/SearchName.css";
+import DataAreaContext from "../utils/employeeDataAreaContext";
 
-const SearchName = () => {
+const searchName = () => {
   const context = useContext(DataAreaContext);
 
   return (
@@ -24,4 +24,4 @@ const SearchName = () => {
     </div>
   );
 }
-export default SearchName;
+export default searchName;
