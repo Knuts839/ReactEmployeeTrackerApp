@@ -76,4 +76,28 @@ const DataArea = () => {
             headings: updatedHeadings
           });
         };
+        useEffect(() => {
+            API.getUsers().then(results => {
+              console.log(results.data.results);
+              setDeveloperState({
+                ...developerState,
+                users: results.data.results,
+                filteredUsers: results.data.results
+              });
+            });
+          }, []);
+        
+          return (
+            <DataAreaContext.Provider
+              value={{ developerState, handleSearchChange, handleSort }}
+            >
+              <Nav />
+              <div className="data-area">
+                {developerState.filteredUsers.length > 0 ? <DataTable /> : <div></div>}
+              </div>
+            </DataAreaContext.Provider>
+          );
+        };
+        
+        export default DataArea;
         
