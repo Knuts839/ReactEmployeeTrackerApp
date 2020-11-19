@@ -3,7 +3,7 @@ import DataTable from "./dataTable";
 import Nav from "./Nav";
 import API from "../utils/API";
 import "../styles/DataArea.css";
-import DataAreaContext from "../utils/myDataSpot";
+import myDataSpot from "../utils/myDataSpot";
 
 const DataArea = () => {
     const [developerState, setDeveloperState] = useState({
@@ -88,14 +88,14 @@ const DataArea = () => {
           }, []);
         
           return (
-            <DataAreaContext.Provider
+            <myDataSpot.Provider
               value={{ developerState, handleSearchChange, handleSort }}
             >
               <Nav />
               <div className="data-area">
                 {developerState.filteredUsers.length > 0 ? <DataTable /> : <div></div>}
               </div>
-            </DataAreaContext.Provider>
+            </myDataSpot.Provider>
           );
         };
         
