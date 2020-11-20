@@ -1,10 +1,10 @@
 
 import React, { useContext } from "react";
 import "../styles/DataBody.css";
-import myDataSpot from "../utilities/myDataSpot";
+import DataAreaContext from "../utilities/DataAreaContext";
 
 const DataBody = () => {
-  const context = useContext(myDataSpot);
+  const context = useContext(DataAreaContext);
 
   function formatDate(date) {
     const dateArray = date.split("-");

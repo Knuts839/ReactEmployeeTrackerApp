@@ -2,11 +2,11 @@
 import React, { useContext } from "react";
 import DataBody from "./EmployeeDataBody";
 import "../styles/DataTable.css";
-import myDataSpot from "../utilities/myDataSpot";
+import DataAreaContext from "../utilities/DataAreaContext";
 
 const DataTable = () => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
-  const context = useContext(myDataSpot);
+  const context = useContext(DataAreaContext);
 
   return (
 
@@ -24,7 +24,7 @@ const DataTable = () => {
                   key={name}
                   style={{ width }}
                   onClick={() => {
-                    // context.handleSort(name.toLowerCase());
+                    context.handleSort(name.toLowerCase());
                     context.handleSort(name);
                   }}
                 >
