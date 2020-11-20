@@ -1,6 +1,5 @@
 
 import React, { useContext } from "react";
-// import "../styles/SearchBox.css";
 import myDataSpot from "../utilities/myDataSpot";
 
 const searchDOB = () => {

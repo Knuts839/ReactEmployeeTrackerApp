@@ -1,10 +1,10 @@
 
 import React, { useContext } from "react";
-import employeeDataBody from "./employeeDataBody";
-// import "../styles/DataTable.css";
+// import employeeDataBody from "./employeeDataBody";
+import "../styles/DataTable.css";
 import myDataSpot from "../utilities/myDataSpot";
 
-const dataTable = () => {
+const DataTable = () => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const context = useContext(myDataSpot);
 
@@ -42,4 +42,4 @@ const dataTable = () => {
   );
 }
 
-export default dataTable;
+export default DataTable;
