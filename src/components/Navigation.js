@@ -1,7 +1,7 @@
 
 import React from "react";
-import "./searchDOB";
-import "./searchName";
+import "./SearchDOBx";
+import "./SearchNamex";
 import "../styles/Nav.css";
 
 function Navigation() {

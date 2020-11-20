@@ -1,8 +1,8 @@
 
 import React, { useContext } from "react";
-import DataBody from "./employeeDataBody";
+import DataBody from "./EmployeeDataBodyx";
 import "../styles/DataTable.css";
-import myDataSpot from "../utilities/MyDataSpot";
+import myDataSpot from "../utilities/myDataSpot";
 
 const DataTable = () => {
   // eslint-disable-next-line react-hooks/rules-of-hooks

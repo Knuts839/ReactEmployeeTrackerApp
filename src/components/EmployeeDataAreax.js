@@ -1,9 +1,9 @@
 import React, { useState, useEffect, handleSearchChange } from "react";
-import DataTable from "./dataTable";
+import DataTable from "./DataTablex";
 import Navagation from "./Navigation";
 import api from "../utilities/api";
 import "../styles/DataArea.css";
-import myDataSpot from "../utilities/MyDataSpot";
+import myDataSpot from "../utilities/myDataSpot";
 
 const DataArea = () => {
     const [developerState, setDeveloperState] = useState({
@@ -86,7 +86,8 @@ const DataArea = () => {
                 filteredUsers: results.data.results
               });
             });
-          }, [developerState]);
+          // eslint-disable-next-line react-hooks/exhaustive-deps
+          }, []);
         
           return (
             <myDataSpot.Provider

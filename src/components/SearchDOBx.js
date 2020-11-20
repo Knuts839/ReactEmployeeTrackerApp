@@ -1,6 +1,6 @@
 
 import React, { useContext } from "react";
-import myDataSpot from "../utilities/MyDataSpot";
+import myDataSpot from "../utilities/myDataSpot";
 
 const SearchDOB = () => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
