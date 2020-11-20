@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import "../styles/SearchName.css";
 import myDataSpot from "../utilities/myDataSpot";
 
-const searchName = () => {
+const SearchName = () => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const context = useContext(myDataSpot);
 
@@ -25,4 +25,4 @@ const searchName = () => {
     </div>
   );
 }
-export default searchName;
+export default SearchName;
