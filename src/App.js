@@ -2,7 +2,7 @@
 import React from "react";
 import Main from "./components/Main";
 import Wrapper from "./components/Wrapper";
-import Header from "./components/EmployeeHeaderx";
+import Header from "./components/EmployeeHeader";
 
 import "./App.css";
 

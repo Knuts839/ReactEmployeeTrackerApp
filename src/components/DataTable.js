@@ -1,6 +1,6 @@
 
 import React, { useContext } from "react";
-import DataBody from "./EmployeeDataBodyx";
+import DataBody from "./EmployeeDataBody";
 import "../styles/DataTable.css";
 import myDataSpot from "../utilities/myDataSpot";
 

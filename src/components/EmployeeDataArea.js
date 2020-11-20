@@ -1,5 +1,5 @@
 import React, { useState, useEffect, handleSearchChange } from "react";
-import DataTable from "./DataTablex";
+import DataTable from "./DataTable";
 import Navagation from "./Navigation";
 import api from "../utilities/api";
 import "../styles/DataArea.css";
