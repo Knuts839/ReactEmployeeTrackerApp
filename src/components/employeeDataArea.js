@@ -3,7 +3,7 @@ import DataTable from "./dataTable";
 import Navagation from "./Navigation";
 import api from "../utilities/api";
 import "../styles/DataArea.css";
-import myDataSpot from "../utilities/myDataSpot";
+import myDataSpot from "../utilities/MyDataSpot";
 
 const DataArea = () => {
     const [developerState, setDeveloperState] = useState({
@@ -20,6 +20,7 @@ const DataArea = () => {
     });
 
     const handleSort = heading => {
+      console.log("HandleSortHit")
         let currentOrder = developerState.headings
           .filter(elem => elem.name === heading)
           .map(elem => elem.order)

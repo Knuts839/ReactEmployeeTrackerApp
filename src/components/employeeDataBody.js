@@ -1,7 +1,7 @@
 
 import React, { useContext } from "react";
 import "../styles/DataBody.css";
-import myDataSpot from "../utilities/myDataSpot";
+import myDataSpot from "../utilities/MyDataSpot";
 
 const DataBody = () => {
   const context = useContext(myDataSpot);
