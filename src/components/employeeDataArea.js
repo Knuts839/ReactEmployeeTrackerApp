@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, handleSearchChange } from "react";
 import DataTable from "./dataTable";
 import Navagation from "./Navigation";
 import api from "../utilities/api";

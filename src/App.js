@@ -12,7 +12,6 @@ function App() {
       <Wrapper>
         <Header />
         <Main />
-        <Wrapper />
       </Wrapper>
     </div>
   );
