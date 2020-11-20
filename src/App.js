@@ -1,6 +1,6 @@
 
 import React from "react";
-import Main from "./components/Main";
+import Main from "./components/Mainx";
 import Wrapper from "./components/Wrapper";
 import Header from "./components/employeeHeader";
 
