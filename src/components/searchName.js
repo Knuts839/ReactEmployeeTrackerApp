@@ -1,9 +1,10 @@
 import React, { useContext } from "react";
 // import "../styles/SearchName.css";
-import DataAreaContext from "../utils/employeeDataAreaContext";
+import myDataSpot from "../utilities/myDataSpot";
 
 const searchName = () => {
-  const context = useContext(DataAreaContext);
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const context = useContext(myDataSpot);
 
   return (
     <div className="searchbox">

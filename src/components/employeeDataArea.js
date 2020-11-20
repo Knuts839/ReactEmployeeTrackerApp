@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import DataTable from "./dataTable";
-import Nav from "./Nav";
-import API from "../utils/API";
+import Nav from "./Navigation";
+import API from "../utilities/api";
 // import "../styles/DataArea.css";
-import myDataSpot from "../utils/myDataSpot";
+import myDataSpot from "../utilities/myDataSpot";
 
 const DataArea = () => {
     const [developerState, setDeveloperState] = useState({
@@ -85,10 +85,11 @@ const DataArea = () => {
                 filteredUsers: results.data.results
               });
             });
-          }, []);
+          }, [developerState]);
         
           return (
             <myDataSpot.Provider
+              // eslint-disable-next-line no-undef
               value={{ developerState, handleSearchChange, handleSort }}
             >
               <Nav />
