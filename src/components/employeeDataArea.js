@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import DataTable from "./dataTable";
-import Nav from "./Navigation";
-import API from "../utilities/api";
+import Navagation from "./Navigation";
+import api from "../utilities/api";
 // import "../styles/DataArea.css";
 import myDataSpot from "../utilities/myDataSpot";
 
@@ -77,7 +77,7 @@ const DataArea = () => {
           });
         };
         useEffect(() => {
-            API.getUsers().then(results => {
+            api.getUsers().then(results => {
               console.log(results.data.results);
               setDeveloperState({
                 ...developerState,
@@ -92,7 +92,7 @@ const DataArea = () => {
               // eslint-disable-next-line no-undef
               value={{ developerState, handleSearchChange, handleSort }}
             >
-              <Nav />
+              <Navagation />
               <div className="data-area">
                 {developerState.filteredUsers.length > 0 ? <DataTable /> : <div></div>}
               </div>
